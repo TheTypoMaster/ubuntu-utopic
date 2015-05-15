@@ -86,4 +86,6 @@ static inline void kvm_timer_sync_hwstate(struct kvm_vcpu *vcpu) {}
 static inline void kvm_timer_vcpu_terminate(struct kvm_vcpu *vcpu) {}
 #endif
 
+bool kvm_timer_should_fire(struct kvm_vcpu *vcpu);
+
 #endif
